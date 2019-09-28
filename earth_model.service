@@ -1,0 +1,13 @@
+[Unit]
+Description=Earth Model
+
+[Service]
+ExecStart=/home/pi/earth_model/earth_model.sh
+WorkingDirectory=/home/pi/earth_model
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
